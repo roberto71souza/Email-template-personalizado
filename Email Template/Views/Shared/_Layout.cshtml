@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    var userEmail = Context.Session.GetString("UseEmail");
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Email Template</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+
+        <a id="btn-pg-inicial" asp-action="Index" asp-controller="Home">Pagina Inicial</a>
+
+        @if (!string.IsNullOrEmpty(userEmail))
+        {
+            <div class="dropdown">
+                <button class="dropbtn">Usuario</button>
+                <div class="dropdown-content">
+                    <a asp-action="Perfil" asp-controller="Home">Perfil</a>
+                    <a asp-action="Deslogar" asp-controller="Home">Deslogar</a>
+                </div>
+            </div>
+        }
+        @RenderBody()
+    </div>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

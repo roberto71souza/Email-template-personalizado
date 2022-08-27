@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Mudar minha senha";
+}
+
+<div class="content-cadastrar">
+
+    <form asp-action="MudarSenha" asp-controller="Home" method="post" class="form-cadastrar">
+        <h1>Formulario mudar minha senha</h1>
+
+        <div id="validation" asp-validation-summary="ModelOnly"></div>
+
+        <div class="form-item">
+            <input name="novaSenha" type="password">
+        </div>
+
+        <div class="form-item btn">
+            <input type="submit" value="Mudar senha">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+﻿@model Email_Template.Models.UsuarioLoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="content-login">
+
+    <form asp-action="Login" asp-controller="Home" class="form-login">
+        <h1>Formulario de Login</h1>
+        <div class="form-item">
+            <input type="text" asp-for="Email" placeholder="Email">
+            <span asp-validation-for="Email"></span>
+        </div>
+
+        <div class="form-item">
+            <input type="password" asp-for="Senha" placeholder="Senha">
+            <span asp-validation-for="Senha"></span>
+        </div>
+
+        <div class="form-item btn">
+            <input type="submit" value="Logar">
+        </div>
+    </form>
+</div>

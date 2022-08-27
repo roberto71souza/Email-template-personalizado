@@ -1,0 +1,195 @@
+﻿html,
+body {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(16, 62, 83);
+    color: white;
+}
+
+#btn-pg-inicial {
+    top: 40px;
+    position: absolute;
+    padding: 15px;
+    font-size: 15px;
+    align-self: flex-start;
+    text-decoration: none;
+    border: 1px solid rgb(226, 43, 156);
+    color: rgb(226, 43, 156);
+}
+
+.dropdown {
+    top: 40px;
+    right: 30px;
+    position: absolute;
+    align-self: end;
+}
+
+.dropbtn {
+    color: rgb(226, 43, 156);
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid rgb(226, 43, 156);
+    background-color: rgb(16, 62, 83);
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(226, 43, 156);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.form-login,
+.form-cadastrar {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+    min-width: 450px;
+    min-height: 400px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form-item > label {
+        font-size: 20px;
+    }
+
+    .form-item > input {
+        padding: 15px;
+        border-radius: 30px;
+        border: none;
+    }
+
+    .form-item.btn > input {
+        background-color: rgb(226, 43, 156);
+        color: white;
+        border: 1px solid white;
+        border-radius: 0px;
+        transition: .8s;
+        cursor: pointer;
+    }
+
+        .form-item.btn > input:hover {
+            background-color: rgba(226, 43, 156, .8);
+        }
+
+    .form-item > span {
+        color: red;
+    }
+
+.container {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border-radius: 30px;
+    border: 2px solid white;
+    min-width: 800px;
+    min-height: 500px;
+}
+
+    .content > a {
+        background-color: rgb(226, 43, 156);
+        border: 2px solid white;
+        font-size: 32px;
+        color: white;
+        border-radius: 20px;
+        padding: 30px;
+        transition: .8s;
+        text-decoration: none;
+    }
+
+        .content > a:hover {
+            background-color: rgba(226, 43, 156, .8);
+        }
+
+.content-login,
+.content-cadastrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid rgb(226, 43, 156);
+    gap: 50px;
+    border-radius: 30px;
+    min-width: 450px;
+    min-height: 400px;
+}
+
+    .content-perfil > .form-item.btn a {
+        background-color: white;
+        border: none;
+        color: rgb(226, 43, 156);
+        border-radius: 20px;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+#validation {
+    color: rgb(226, 43, 156);
+}
+
+@media (max-width:1366px) {
+    .form-login,
+    .form-cadastrar {
+        gap: 35px;
+        min-width: 400px;
+    }
+
+    .content {
+        padding: 20px;
+        gap: 70px;
+        min-width: 650px;
+        min-height: 400px;
+    }
+
+        .content > a {
+            font-size: 25px;
+            padding: 20px;
+        }
+
+    .content-perfil > .form-item.btn a {
+        font-size: 20px;
+    }
+}

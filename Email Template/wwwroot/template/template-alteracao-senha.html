@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        border: 0;
+        margin: 0;
+      }
+
+      section {
+        max-width: 100%;
+        height: 100vh;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: "Roboto", Arial, sans-serif;
+        background-color: rgb(16, 62, 83);
+      }
+
+      .container {
+        padding: 50px 0px 50px 20px;
+        background-color: white;
+        color: rgb(16, 62, 83);
+        border-radius: 20px;
+      }
+
+      h1 {
+        color: rgb(226, 43, 156);
+        font-size: 40px;
+      }
+
+      hr {
+        border: 1px solid rgb(16, 62, 83);
+        width: 1000px;
+        margin-left: 0px;
+      }
+
+      .content {
+        margin-top: 50px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      p > span {
+        color: rgb(226, 43, 156);
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(226, 43, 156);
+      }
+
+      footer {
+        margin: 100px 0px 0px 100px;
+        color: white;
+      }
+
+      footer > p {
+        text-align: center;
+      }
+
+      @media (max-width: 1366px) {
+        h1 {
+          font-size: 35px;
+        }
+        hr {
+          width: 600px;
+        }
+        .content {
+          margin-top: 35px;
+        }
+        p {
+          font-size: 16px;
+        }
+        footer {
+          margin: 80px 0px 0px 100px;
+          color: white;
+        }
+      }
+    </style>
+    <title>Alteração de senha</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Alteração de senha</h1>
+        <hr />
+        <div class="content">
+          <p>
+            Olá #NOME-USUARIO, sua senha foi modificada as #HORA, no dia #DATA.
+          </p>
+
+          <p>Nova senha: <span>#NOVA-SENHA</span>.</p>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2022 - Email Template</p>
+      </footer>
+    </section>
+  </body>
+</html>
